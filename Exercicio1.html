@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 20 HTML CSS - Introdução ao CSS</title>
+  <style>
+    h1{
+        color:hotpink;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        color: black;
+    }
+    h2{
+        color:palevioletred;
+        text-transform: uppercase;
+    }
+     h3{
+        color:rgb(246, 77, 133);
+        text-transform:uppercase
+    }
+     pre{
+        color:rgb(0, 0, 0);
+        text-transform:
+    }
+    .div1{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            border-top: double rgb(253, 183, 217) 6px;
+            margin: 25px;
+            padding: 20px;
+            text-align: justify;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    .div2{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            border-top: double rgb(253, 183, 217) 6px;
+            margin: 25px;
+            padding: 20px;
+            text-align: justify;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    .div3{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+             border-top: double rgb(253, 183, 217) 6px;
+            margin: 25px;
+            padding: 20px;
+            text-align: justify;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    #div4{
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            border-top: double rgb(253, 183, 217) 6px;
+            margin: 25px;
+            padding: 20px;
+            text-align: justify;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    .div5{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+             border-top: double rgb(253, 183, 217) 6px;
+            margin: 25px;
+            padding: 20px;
+            text-align: justify;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    #div6{
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            border-top: double rgb(253, 183, 217) 6px;
+            margin: 25px;
+            padding: 20px;
+            text-align: justify;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+  </style>
+</head>
+
+<body>
+
+  <h1>Exemplo 20 HTML CSS - Introdução ao CSS</h1>
+  <div class="div1">
+    <p>CSS significa Cascading Style Sheets — Folhas de Estilo em Cascata.</p>
+    <p>É a linguagem usada para definir a aparência dos elementos HTML de uma página web.</p>
+    <p>Com CSS é possível controlar cores, fontes, tamanhos, espaçamentos, bordas e muito mais.</p>
+
+
+    <h2>O que é uma Regra CSS</h2>
+
+    <p>Uma regra CSS é composta por um seletor e um bloco de declarações.</p>
+    <p>O seletor indica quais elementos HTML serão estilizados.</p>
+    <p>O bloco de declarações fica entre chaves e contém uma ou mais declarações.</p>
+    <p>Cada declaração é formada por uma propriedade, dois-pontos, um valor e ponto e vírgula.</p>
+
+    <p>Exemplo de regra CSS:</p>
+    <pre>
+    p {
+      color: blue;
+      font-size: 16px;
+    }
+  </pre>
+  </div>
+  <div class="div2">
+    <p>Neste exemplo, p é o seletor, color e font-size são propriedades, blue e 16px são os valores.</p>
+
+
+    <h2>Tipos de Seletores</h2>
+
+    <p>Existem três tipos fundamentais de seletores CSS.</p>
+
+
+    <h3>Seletor de Tipo</h3>
+
+    <p>O seletor de tipo usa diretamente o nome da tag HTML.</p>
+    <p>Ele afeta todos os elementos daquele tipo que existirem na página.</p>
+    <p>Possui a menor especificidade entre os três tipos.</p>
+
+    <p>Exemplos de seletor de tipo:</p>
+    <pre>
+    h1 { }
+    p  { }
+    a  { }
+    li { }
+  </pre>
+
+    <p>A regra acima com h1 afetará todos os títulos h1 da página.</p>
+    <p>A regra com p afetará todos os parágrafos da página.</p>
+  </div>
+
+
+  <div class="div3">
+    <h3>Seletor de Classe</h3>
+
+    <p>O seletor de classe usa um ponto seguido do nome da classe.</p>
+    <p>Ele afeta apenas os elementos que possuem o atributo class com aquele nome.</p>
+    <p>Uma mesma classe pode ser aplicada a vários elementos diferentes.</p>
+    <p>Um mesmo elemento pode ter mais de uma classe ao mesmo tempo.</p>
+    <p>Possui especificidade intermediária — maior que o seletor de tipo.</p>
+
+    <p>Exemplos de seletor de classe:</p>
+    <pre>
+    .destaque   { }
+    .alerta     { }
+    .secundario { }
+  </pre>
+
+    <p>No HTML, a classe é aplicada assim:</p>
+    <pre>
+    <p class="destaque">Este parágrafo tem a classe destaque.</p>
+    <p class="alerta">Este parágrafo tem a classe alerta.</p>
+  </pre>
+  </div>
+
+  <div id="div4">
+    <h3>Seletor de ID</h3>
+
+    <p>O seletor de ID usa uma cerquilha seguida do nome do id.</p>
+    <p>Ele afeta somente o elemento que possui aquele id.</p>
+    <p>Um id deve ser único na página — não pode se repetir.</p>
+    <p>Possui a maior especificidade entre os três tipos.</p>
+
+    <p>Exemplos de seletor de ID:</p>
+    <pre>
+    #cabecalho { }
+    #rodape    { }
+  </pre>
+
+    <p>No HTML, o id é aplicado assim:</p>
+    <pre>
+    <header id="cabecalho">...</header>
+    <footer id="rodape">...</footer>
+  </pre>
+  </div>
+
+  <div class="div5">
+    <h2>Especificidade</h2>
+
+    <p>Quando dois seletores disputam a mesma propriedade em um elemento, vence o de maior especificidade.</p>
+    <p>A ordem de especificidade do maior para o menor é: ID, Classe, Tipo.</p>
+    <p>Em valores numéricos: ID vale 100, Classe vale 10, Tipo vale 1.</p>
+
+
+    <h2>Propriedades e Valores</h2>
+
+    <p>Uma propriedade é o aspecto visual que se deseja controlar.</p>
+    <p>O valor define como aquela propriedade será aplicada.</p>
+
+
+    <h3>Propriedades de Texto</h3>
+
+    <p>color — define a cor do texto.</p>
+    <pre>
+    color: red;
+    color: #FF0000;
+    color: rgb(255, 0, 0);
+  </pre>
+
+    <p>font-size — define o tamanho da fonte.</p>
+    <pre>
+    font-size: 16px;
+    font-size: 1.5em;
+    font-size: 1rem;
+  </pre>
+
+    <p>font-weight — define a espessura da fonte.</p>
+    <pre>
+    font-weight: normal;
+    font-weight: bold;
+    font-weight: 700;
+  </pre>
+
+    <p>font-style — define o estilo da fonte.</p>
+    <pre>
+    font-style: normal;
+    font-style: italic;
+  </pre>
+
+    <p>text-align — define o alinhamento horizontal do texto.</p>
+    <pre>
+    text-align: left;
+    text-align: center;
+    text-align: right;
+    text-align: justify;
+  </pre>
+
+    <p>text-decoration — define a decoração do texto.</p>
+    <pre>
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration: line-through;
+  </pre>
+
+    <p>line-height — define o espaçamento entre linhas.</p>
+    <pre>
+    line-height: 1.5;
+    line-height: 24px;
+  </pre>
+
+
+  </div>
+
+  <div id="div6">
+    <h3>Propriedades de Fundo</h3>
+
+    <p>background-color — define a cor de fundo do elemento.</p>
+    <pre>
+    background-color: yellow;
+    background-color: #FFFF00;
+    background-color: transparent;
+  </pre>
+
+
+    <h3>Propriedades de Espaçamento</h3>
+
+    <p>margin — define o espaço externo ao redor do elemento.</p>
+    <pre>
+    margin: 10px;
+    margin: 10px 20px;
+    margin: 10px 20px 5px 0;
+  </pre>
+
+    <p>padding — define o espaço interno entre o conteúdo e a borda.</p>
+    <pre>
+    padding: 8px;
+    padding: 4px 12px;
+  </pre>
+
+
+    <h3>Propriedades de Borda</h3>
+
+    <p>border — define a borda ao redor do elemento. Recebe largura, estilo e cor.</p>
+    <pre>
+    border: 1px solid black;
+    border: 2px dashed red;
+    border: 3px dotted blue;
+  </pre>
+
+    <p>border-radius — define o arredondamento dos cantos da borda.</p>
+    <pre>
+    border-radius: 4px;
+    border-radius: 50%;
+  </pre>
+
+
+    <h2>Onde escrever o CSS</h2>
+
+    <p>O CSS pode ser escrito em três lugares diferentes.</p>
+
+    <p>Interno — dentro da tag style no head do documento HTML.</p>
+    <pre>
+
+  </pre>
+
+    <p>Externo — em um arquivo separado com extensão .css, linkado no head.</p>
+    <pre>
+    <link rel="stylesheet" href="estilos.css">
+  </pre>
+
+    <p>Inline — diretamente no atributo style do elemento HTML.</p>
+    <pre>
+  
+  </pre>
+  </div>
+
+
+
+
+</body>
+
+</html>
