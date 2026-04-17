@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 15 HTML - Formulários</title>
+</head>
+<body>
+    <form action="paginaDestino.php" method="post">
+        <h1>Exemplo 15: Formulários</h1>
+        <div>
+            <label for="">Texto com 20 caracteres máximo</label><br>
+            <input type="text" name="txtTexto20Caracter" id="txtTexto20Caracter" maxlength="20"> 
+            </label>
+        </div>
+        <div>
+            <label for="">Texto com 10 caracteres máximo</label><br>
+            <input type="text" name="txtTexto10Caracter" id="txtTexto10Caracter" maxlength="10"> 
+            </label>
+        </div>
+        <div>
+            <label for="">Texto com 5 caracteres máximo</label><br>
+            <input type="text" name="txtTexto5Caracter" id="txtTexto5Caracter" maxlength="5"> 
+            </label>
+        </div>
+        <div>
+            <label for="">Componente TextArea
+            <textarea name="txtDescricao" id="txtDescricao" cols="100" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="submit">Salvar</button>
+        </div>
+    </form>
+</body>
+</html>
