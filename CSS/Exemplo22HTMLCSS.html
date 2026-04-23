@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exemplo 22 HTML CSS</title>
+
+<style>
+    .painel{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        font-weight: bold;
+        border-left: solid blue 4px;
+    }
+    .painel-body div{
+        margin: 15px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container-sm">
+    <h1>Exemplo 22 HTML CSS - Vinculação de Arquivos Externos via Internet</h1>
+    <div class="alert alert-primary" role="alert">
+        <p>Para vincularmnos arquivos externos nos nossos documentos HTML podemos criar um arquivo, nosso,
+                personalisado ou simplesmente vincular um arquivo externo de um terceiro. Neste exemplo estamos usando o
+                framework Bootstrap, que já possui uma série de seletores de classe prontos. Nesta divi estamos usando o
+                seletor de classe alert</p>
+    </div>
+    <div>
+        <h2>Exemplo de criação de formulário usando Bootstrap</h2>
+
+        <div class="card mt-4 painel">
+            <div class="card-header bg-primary text-white">
+                Cadrastro de Pessoa
+            </div>
+            <div class="card-body painel-body">
+                <div>
+                    <label for="">Nome</label>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+                <div>
+                    <label for="">Nome da Mãe</label>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+                <div>
+                    <label for="">Nome do Pai</label>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+                <div>
+                    <label for="">Data de Nascimento</label>
+                    <input type="date" name="" id="" class="form-control">
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-primary form-control">Salvar</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-primary form-control">Excluir</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-primary form-control">Pesquisar</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-primary form-control">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
