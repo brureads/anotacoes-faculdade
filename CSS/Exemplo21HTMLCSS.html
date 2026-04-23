@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 21 HTML CSS</title>
+    <link rel="stylesheet" href="meu-arquivo-css.css">
+</head>
+<body>
+    <h1>Exemplo 21 HTML CSS - Formas de vinculção de arquivos CSS</h1>
+    <div class="seletor1">
+        <h2>Vinculação de arquivos</h2>
+        <p>Quando falamos de vinculação de arquivos CSS, falamos basicamente de duas formas a vinculação interna e a vinculação externa. Neste exemplo, vamos falar da vinculação externa que é a mais recomendada no desenvolvimento web, pois mantém o contéudo HTML separado do CSS. </p>
+        <p>A vinculação externa é a mais recomendada pois além de manter o codigo mais organizado facilita a manutenção e permite que voce use o mesmo estilo em varias paginas do seu site, ou seja, permite o reuso.</p>
+    </div>
+    <div class="seletor2">
+        <h2>Vinculação Externa CSS</h2>
+        <p>Como vimos a cima, a vinculação a externa é a mais recomendada pois possibilita o reuso e facilita a manutencao das paginas centralizando tudo em um unico arquivo CSS. Para criarmos um arquivo .css, devemos seguir os seguintes passos:</p>
+        <ul>
+            <li>Criar o arquivo com extensão .css - Neste arquivo, devemos escrever apenas as regras de estilo, usando os seletores que ja conhecemos(tipo, classe e id)</li>
+            <li>Vincular os arquivos css criado ao documento html, para isso usaremos a tag &lt;link&gt;</li>
+        </ul>
+    </div>
+    <div class="seletor3">
+        <h2>Vantagens da vinculação Externa</h2>
+        <ul id="seletorId">
+            <li>Cache do Navegador: o navegador baixa o CSS apenas uma vez e o armazena. Isso torna o carregamento das outras paginas do site muito mais rapido</li>
+            <li>Organização: como o codigo fica separado, nao ha poluição ou mistura de html com css</li>
+            <li>Edição Global: neste caso, estamos falando da facilidade de manutenção, pois se precisarmos mudar um estilo, basta fazer alteração no arquivo separado, que a mudança se reflitira em todos os elementos que utilizam aquela regra de estilo</li>
+        </ul>
+    </div>
+</body>
+</html>
