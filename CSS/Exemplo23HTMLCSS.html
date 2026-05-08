@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 23 - HTML CSS</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 40px;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 36xp;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .texto-normal {
+            font-size: 1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .texto-destaque {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 5px;
+            color: darkorange;
+        }
+
+        .texto-decorado {
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px grey;
+            font-size: 2.3rem;
+        }
+
+        .texto-espacado {
+            color: crimson;
+            line-height: 10px;
+            letter-spacing: 8px;
+            word-spacing: 10px;
+        }
+
+        #div1 {
+            margin: 25px;
+            padding: 15px;
+            border-left: solid red 6px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        #div2 {
+            margin: 25px;
+            padding: 15px;
+            border-left: solid blue 6px;
+            box-shadow: rgba(28, 28, 123, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h1>Exemplo 23 CSS - Propriedades de Fontes e Textos</h1>
+        <h2>Fontes</h2>
+        <p>Quando aplicamos folhas estilo em documentos html, procuramos estilizar textos que podem ser estilizados de
+            formas diferentes pois podemos mudar as diversas propriedades das fontes e do próprio texto. As propriedades
+            de
+            fonts, incluem cores, peso, estilo, tamanho, dentre outros valores. Neste exemplo, estamos usando
+            propriedades
+            de fonts diferentes.</p>
+        <h2>Valores possíveis aplicados a propriedade font em css</h2>
+
+        <ul>
+            <li><strong>font-family</strong> → Define o tipo de fonte (ex: Arial, Roboto, serif)</li>
+            <li><strong>font-size</strong> → Define o tamanho da fonte</li>
+            <li><strong>font-weight</strong> → Define o peso da fonte (normal, bold, 100–900)</li>
+            <li><strong>font-style</strong> → Define o estilo (normal, italic, oblique)</li>
+            <li><strong>font-variant</strong> → Controla variações como small-caps</li>
+            <li><strong>font-stretch</strong> → Ajusta a largura da fonte (condensada ou expandida)</li>
+            <li><strong>font-size-adjust</strong> → Ajusta a legibilidade com base na altura-x</li>
+            <li><strong>font-kerning</strong> → Controla o espaçamento entre pares de letras</li>
+            <li><strong>font-feature-settings</strong> → Ativa recursos tipográficos avançados (OpenType)</li>
+            <li><strong>font-variation-settings</strong> → Controla fontes variáveis (variable fonts)</li>
+            <li><strong>font</strong> → Propriedade resumida (atalho para várias configurações)</li>
+        </ul>
+        <h2>Propriedade Texto</h2>
+        <p>As propriedades de texto em CSS são usadas para controlar a aparência, alinhamento e legibilidade do conteúdo
+            textual. Essas propriedades são amplamente aplicadas aos documentos HTML e elas não alteram a fonte em
+            si,mas
+            elas influenciam a forma como o texto será exibido e organizado visualmente no documento html.</p>
+        <h2>Princípais valores aplicados a propriedade texto</h2>
+        <ul>
+            <li><strong>text-align</strong> → Define o alinhamento do texto (left, right, center, justify)</li>
+            <li><strong>text-transform</strong> → Controla a transformação do texto (uppercase, lowercase, capitalize)
+            </li>
+            <li><strong>text-decoration</strong> → Adiciona decoração ao texto (underline, line-through, overline)</li>
+            <li><strong>text-indent</strong> → Define o recuo da primeira linha do parágrafo</li>
+            <li><strong>letter-spacing</strong> → Controla o espaçamento entre letras</li>
+            <li><strong>word-spacing</strong> → Controla o espaçamento entre palavras</li>
+            <li><strong>line-height</strong> → Define o espaçamento entre linhas</li>
+            <li><strong>text-shadow</strong> → Adiciona sombra ao texto</li>
+            <li><strong>white-space</strong> → Controla como espaços e quebras de linha são tratados</li>
+            <li><strong>overflow-wrap</strong> → Define como palavras longas quebram linha</li>
+        </ul>
+    </div>
+    <div id="div2">
+        <h2>Exemplo prático de estilização</h2>
+
+        <p class="texto-normal">
+            Este é um parágrafo padrão utilizado para demonstrar a configuração básica de fonte e alinhamento.
+            Aqui aplicamos propriedades importantes para garantir uma boa leitura.
+        </p>
+
+        <p class="texto-destaque">
+            este texto demonstra transformações e destaque visual usando css.
+        </p>
+
+        <p class="texto-decorado">
+            Este texto possui decoração e sombra para chamar atenção do usuário.
+        </p>
+
+        <p class="texto-espacado">
+            Este exemplo mostra como o espaçamento entre letras, palavras e linhas pode impactar a legibilidade.
+        </p>
+    </div>
+</body>
+
+</html>
