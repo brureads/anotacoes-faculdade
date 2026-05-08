@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 24 HTML CSS</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+            color: #3333;
+        }
+
+        h1 {
+            color: #43054e;
+        }
+
+        section {
+            margin: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cores em CSS — Propriedades e Valores</h1>
+
+    <h2>Formatos de cor em CSS</h2>
+
+    <section class="exemplo-named">
+        <h2>1. Named colors — palavras-chave nomeadas</h2>
+        <p>
+            CSS oferece <strong>148 nomes prontos</strong> como <code>tomato</code>, <code>goldenrod</code>,
+            <code>cornflowerblue</code>. Fáceis de ler, mas sem controle fino de tom ou opacidade.
+        </p>
+        <p>Propriedades usadas aqui: <code>background-color: tomato</code> · <code>color: white</code> ·
+            <code>border-left: 5px solid goldenrod</code>
+        </p>
+    </section>
+
+    <section class="exemplo-hex">
+        <h2>2. Hexadecimal — #RRGGBB</h2>
+        <p>
+            O formato mais comum. Cada par representa um canal (Vermelho, Verde, Azul)
+            com valores de <strong>00 a FF</strong>. Com 8 dígitos (<code>#RRGGBBAA</code>), o último par define a
+            opacidade.
+        </p>
+        <p>Propriedades usadas aqui: <code>background-color: #43054E</code> · <code>color: #fff</code></p>
+    </section>
+
+    <section class="exemplo-rgb">
+        <h2>3. rgb() e rgba() — canais numéricos</h2>
+        <p>
+            Define cada canal (R, G, B) de <strong>0 a 255</strong>.
+            O 4º valor (<em>alpha</em>) controla a opacidade: <code>0</code> = transparente, <code>1</code> = opaco.
+        </p>
+        <p>Propriedades usadas aqui: <code>background-color: rgb(236, 0, 137)</code> ·
+            <code>color: rgba(255, 255, 255, 0.95)</code>
+        </p>
+    </section>
+
+    <section class="exemplo-hsl">
+        <h2>4. hsl() e hsla() — matiz, saturação e luminosidade</h2>
+        <p>
+            <strong>H</strong>ue (0–360°) define a cor; <strong>S</strong>aturation e <strong>L</strong>ightness
+            (0–100%) controlam a vivacidade e o brilho.
+            Ideal para criar variações de uma mesma cor apenas ajustando o L.
+        </p>
+        <p>Propriedades usadas aqui: <code>background-color: hsl(210, 80%, 40%)</code> · borda:
+            <code>hsl(210, 80%, 25%)</code> (mesma cor, mais escura)
+        </p>
+    </section>
+
+    <section class="exemplo-variaveis">
+        <h2>5. Variáveis CSS — Custom Properties</h2>
+        <p>
+            Defina a paleta uma vez em <code>:root</code> com prefixo <code>--</code>
+            e reutilize em qualquer lugar com <code>var(--nome)</code>.
+            Facilita manutenção e criação de temas.
+        </p>
+        <p>Propriedades usadas aqui: <code>background-color: var(--cor-secundaria)</code> ·
+            <code>border-left: 5px solid var(--cor-primaria)</code>
+        </p>
+    </section>
+
+    <section class="exemplo-gradiente">
+        <h2>6. Gradiente — linear-gradient()</h2>
+        <p>
+            Gradientes são valores da propriedade <code>background</code> (não <code>background-color</code>).
+            Permitem transição suave entre duas ou mais cores, com direção ou ângulo definidos.
+        </p>
+        <p>Propriedade usada aqui: <code>background: linear-gradient(to right, #EC0089, #43054E)</code></p>
+    </section>
+
+    <h2>Contraste e Acessibilidade (WCAG)</h2>
+    <p>
+        O padrão WCAG 2.1 exige razão mínima de <strong>4,5:1</strong> para texto normal (nível AA)
+        e <strong>7:1</strong> para máxima acessibilidade (nível AAA).
+        Ferramentas como o <em>WebAIM Contrast Checker</em> calculam essa razão automaticamente.
+    </p>
+
+    <section class="exemplo-contraste-bom">
+        <h2>Bom contraste — nível AAA (~21:1)</h2>
+        <p>Texto branco sobre fundo preto. Máxima legibilidade, amplamente usado em interfaces modernas.</p>
+    </section>
+
+    <section class="exemplo-contraste-ok">
+        <h2>Contraste mínimo aceitável — nível AA (~4,6:1)</h2>
+        <p>Texto azul escuro sobre branco. Aprovado pelo WCAG, adequado para uso em produção.</p>
+    </section>
+
+    <section class="exemplo-contraste-ruim">
+        <h2>Baixo contraste — reprovado (~1,1:1)</h2>
+        <p>Amarelo claro sobre amarelo. Praticamente ilegível — prejudica todos os usuários, especialmente daltônicos.
+        </p>
+    </section>
+</body>
+
+</html>
